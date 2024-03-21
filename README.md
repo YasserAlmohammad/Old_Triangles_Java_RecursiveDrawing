@@ -1,5 +1,11 @@
+Note: this is an old Java work that I did in 2004 I think, 
+
+how to draw this?
+![image1](/images/1.jpg)
+
 Intro:
 Implementation of all next projects was done in Java (JDK1.4), it’s a modular OOP language and easy to draw with. 
+![image2](/images/2.jpg)
 
 To find out the recursive in the previous figures we need to analyze the figures first to understand how they were from out of each other then to write down the drawing algorithm.
 1- First of all:
@@ -7,10 +13,10 @@ To find out the recursive in the previous figures we need to analyze the figures
 
 2- the four levels have the general shape of a triangle of equal sides
 3- lets take the side to above:
-
+![image3](/images/3.jpg)
 We see that each level consists of 4 parts of the level before, with different rotations, and the basic figure is a line at the first level, so we can say that:
 	For a 60 degrees angle we’ve got 6 different rotations with different directions which could be represented in this way:
-
+![image4](/images/4.jpg)
 So a line has a start point + direction , and that discriminates the all 6 rotations of the figure, considering the start point is the top-right corner we get:
 	A4 . A6. A2       is the basic figure
 And the figures with all of their mutations will be
@@ -77,9 +83,12 @@ Or anything.
 step of line drawing is
 entered by the user, so the
 level too.
-
+![image5](/images/5.jpg)
 Next we’ll see a sample
 Of the UI
-
+![image6](/images/6.jpg)
+![image7](/images/7.jpg)
 The shading of the figure was done using path drawing:
 	A GeneralPath object of the drawn lines and closed when finished and filled with a light-gray color (filling after the whole shape was drawn, so animation over the lines stands still). 
+![image8](/images/8.jpg)
+![image9](/images/9.jpg)
